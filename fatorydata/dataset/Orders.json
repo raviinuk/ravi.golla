@@ -1,0 +1,21 @@
+{
+	"name": "Orders",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStore1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetName": "Orders",
+			"location": {
+				"type": "AzureDataLakeStoreLocation",
+				"fileName": "Sample - Superstore.xls",
+				"folderPath": "ImportFromiMac"
+			},
+			"firstRowAsHeader": true
+		},
+		"schema": []
+	}
+}
